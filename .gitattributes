@@ -1,0 +1,15 @@
+# Language detection rules
+# Exclude build artifacts
+*.astro linguist-detectable
+*.map linguist-generated
+
+public/** linguist-vendored
+*.yaml linguist-detectable=false
+*.json linguist-detectable=false
+src/**/*.astro linguist-detectable
+package-lock.json linguist-generated
+*.png binary
+*.min.js linguist-generated
+*.html linguist-vendored
+
+* text=auto eol=lf
